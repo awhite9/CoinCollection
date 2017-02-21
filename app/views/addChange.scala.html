@@ -1,0 +1,22 @@
+@()
+
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <link rel="stylesheet" type ="text/css" href="@routes.Assets.at("stylesheets/actionPage.css")"/>
+    <meta charset=""UTF-8>
+    <title>Add Change Amount</title>
+</head>
+<body>
+<form method="POST" action="@routes.CoinCollectionController.addChange()">
+    <fieldset>
+        <legend>Add Amount to make Change</legend>
+        <div>
+            <lable for="changeAmount" class="title">Change Amount:</lable>
+            <input type="text" name="changeAmount"/>
+        </div>
+        <button>Make Change!!</button>
+    </fieldset>
+</form>
+</body>
+</html>

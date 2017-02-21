@@ -1,0 +1,64 @@
+@(coinCollections: CoinCollection, changeText: String)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type ="text/css" href="@routes.Assets.at("stylesheets/main.css")"/>
+
+</head>
+<body>
+<h1>Making Change @changeText</h1>
+
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">Count:</th>
+    </tr>
+    <tr>
+
+        <th scope="row">Hundred Dollar Bill</th>
+        <td>@coinCollections.hundredListCount()</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Twenty Dollar Bill</th>
+        <td>@coinCollections.twentyListCount()</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Ten Dollar Bill</th>
+        <td>@coinCollections.tenListCount()</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Five Dollar Bill</th>
+        <td>@coinCollections.fiveListCount</td>
+    </tr>
+
+    <tr>
+        <th scope="row">One Dollar Bill</th>
+        <td>@coinCollections.dollarListCount</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Quarter</th>
+        <td>@coinCollections.quarterListCount</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Dime</th>
+        <td>@coinCollections.dimeListCount()</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Nickle</th>
+        <td>@coinCollections.nickleListCount()</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Penny</th>
+        <td>@coinCollections.pennyListCount()</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@(coinCollections: CoinCollection)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type ="text/css" href="@routes.Assets.at("stylesheets/main.css")"/>
+
+</head>
+<body>
+<h1>Coin Collection!!</h1>
+
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">Coin Year</th>
+    </tr>
+    <tr>
+    @for(coinCollection <- coinCollections.getListQuarter){
+    <th scope="row">Quarter</th>
+        <td>@coinCollection.getYear</td>
+    </tr>
+}
+    <tr>
+        @for(coinCollection <- coinCollections.getListDime){
+        <th scope="row">Dime</th>
+        <td>@coinCollection.getYear</td>
+    </tr>
+    }
+    <tr>
+        @for(coinCollection <- coinCollections.getListNickle){
+        <th scope="row">Nickle</th>
+        <td>@coinCollection.getYear</td>
+    </tr>
+    }
+    <tr>
+        @for(coinCollection <- coinCollections.getListPenny){
+        <th scope="row">Penny</th>
+        <td>@coinCollection.getYear</td>
+    </tr>
+    }
+
+
+</table>
+</body>
+</html>
