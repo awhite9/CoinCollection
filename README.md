@@ -1,3 +1,3 @@
-# Play Java Product with JPA
+# Coin Collection Lab
 
-This project demonstrate how to create a simple CRUD application with Play, using JPA.
+Coin Collection Lab in Play MVC.
